@@ -13,25 +13,27 @@ function Venue() {
 
           <div className="col-lg-6 col-12">
             <iframe
-              title="unique"
-              className="google-map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1511.091461689997!2d-73.9866630916883!3d40.758001294831736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855a96da09d%3A0x860bf5a5e1a00a68!2sTimes%20Square%2C%20New%20York%2C%20NY%2010036%2C%20USA!5e0!3m2!1sen!2ssg!4v1643035529098!5m2!1sen!2ssg"
-              width="100%"
-              height="371.59"
+              title="uniqueMap"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.8524710049046!2d4.8909125658019965!3d52.37309502978659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609c73b4b14ef%3A0x7e86dfc7e2ced272!2sDam%2C%20Amsterdam!5e0!3m2!1snl!2snl!4v1652611575860!5m2!1snl!2snl"
+              width="600"
+              height="450"
+              style={{ border: 0 }}
+              allowFullScreen={true}
               loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
 
           <div className="col-lg-6 col-12 mt-5 mt-lg-0">
             <div className="venue-thumb bg-white shadow-lg">
               <div className="venue-info-title">
-                <h2 className="text-white mb-0">Times Square</h2>
+                <h2 className="text-white mb-0">Our Office</h2>
               </div>
 
               <div className="venue-info-body">
                 <h4 className="d-flex">
                   <i className="bi-geo-alt me-2"></i>
-                  <span>102 South. 7th Street, New York, NY 10036, USA</span>
+                  <span>De Dam, Amsterdam, Netherlands</span>
                 </h4>
 
                 <h5 className="mt-4 mb-3">

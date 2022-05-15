@@ -14,11 +14,7 @@ export function Scoreboard() {
   return (
     <div className="App">
       <main>
-        <VideoHeader youtubeId="qRFcLHo58eQ" title="Scoreboard" />
-
         <VideoGallery />
-
-        <InfoSection />
 
         <Speakers />
 

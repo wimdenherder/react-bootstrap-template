@@ -21,7 +21,17 @@ export function Home() {
 
         <VideoGallery />
 
-        <InfoSection />
+        <InfoSection
+          title="Our story"
+          text1="The importance of Leadership Conference in 2022"
+          text2="Leadership Event is one-page Bootstrap v5.1.3 CSS layout for your
+          website. Thank you for choosing TemplateMo website where you can
+          instantly download free CSS templates at no cost."
+          text3="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut dolore"
+          button1="Meet Speakers"
+          button2="Check out Schedule"
+        />
 
         <Speakers />
 
