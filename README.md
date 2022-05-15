@@ -4,6 +4,8 @@ I copied the free to use template from here: https://templatemo.com/tm-575-leade
 And adjusted it to work with react, react-router and typescript.
 Enjoy!
 
+![ScreenShot](/screenshots/2022-05-15.png)
+
 # Installation
 
 ```
