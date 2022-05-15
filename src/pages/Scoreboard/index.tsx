@@ -14,13 +14,7 @@ export function Scoreboard() {
   return (
     <div className="App">
       <main>
-        <VideoGallery />
-
-        <Speakers />
-
-        <Schedule />
-
-        <CallToAction />
+        <VideoHeader title="We hope to see you soon" youtubeId="jWP4JLUxiqY" />
 
         <Pricing />
 

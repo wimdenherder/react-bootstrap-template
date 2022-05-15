@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar(props: { config: any }) {
   return (
@@ -28,9 +28,14 @@ function Navbar(props: { config: any }) {
           <ul className="navbar-nav ms-auto">
             {props.config.links.map((link: any) => (
               <li className="nav-item">
-                <Link to={link.to} className="nav-link click-scroll">
+                <NavLink
+                  exact={true}
+                  activeClassName="active"
+                  className="nav-link click-scroll"
+                  to={link.to}
+                >
                   {link.text}
-                </Link>
+                </NavLink>
               </li>
             ))}
 

@@ -1,5 +1,4 @@
 import "./style.css";
-import { Link } from "react-router-dom";
 import VideoHeader from "../../components/VideoHeader";
 import VideoGallery from "../../components/VideoGallery";
 import InfoSection from "../../components/InfoSection";
@@ -19,8 +18,8 @@ export function Activity() {
         <VideoGallery />
 
         <InfoSection
-          title="Why we care"
-          text1="Music is the foundation of a good life"
+          title="The ultimate band"
+          text1="Since 1985"
           text2="Dream Theater is an American progressive metal band formed in 1985 under the name Majesty by John Petrucci, John Myung and Mike Portnoy while they attended Berklee College of Music in Boston, Massachusetts."
           text3="Dream Theater recorded many albums"
           button1="Mike Portnoy"
