@@ -1,16 +1,31 @@
-import React from 'react';
+import React from "react";
 
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { HomePage } from './pages/Home';
-import { PageTwo } from './pages/PageTwo';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { Ttd } from "./pages/Ttd/index";
+import { Statistics } from "./pages/Statistics/index";
+import { Scoreboard } from "./pages/Scoreboard/index";
+import Navbar from "./components/Navbar";
 
-const App = () => (
-  <BrowserRouter>
-    <Switch>
-      <Route path="/" exact component={HomePage} />
-      <Route path="/page2" exact component={PageTwo} />
-    </Switch>
-  </BrowserRouter>
-);
+function App() {
+  const config = {
+    links: [
+      { to: "/", text: "Home", component: Home },
+      { to: "/ttd", text: "Start activity", component: Ttd },
+      { to: "/statistics", text: "Statistics", component: Statistics },
+      { to: "/scoreboard", text: "Score board", component: Scoreboard },
+    ],
+  };
+  return (
+    <Router>
+      <Navbar config={config} />
+      <Switch>
+        {config.links.map((link: any) => (
+          <Route exact path={link.to} component={link.component} />
+        ))}
+      </Switch>
+    </Router>
+  );
+}
 
 export default App;
