@@ -10,11 +10,11 @@ import Pricing from "../../components/Pricing";
 import Venue from "../../components/Venue";
 import Contact from "../../components/Contact";
 
-export function Scoreboard() {
+export function Activity() {
   return (
     <div className="App">
       <main>
-        <VideoHeader youtubeId="qRFcLHo58eQ" title="Scoreboard" />
+        <VideoHeader youtubeId="f2qfAlXi6rA" title="Activity 2022" />
 
         <VideoGallery />
 

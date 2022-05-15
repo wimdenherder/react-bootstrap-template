@@ -4,18 +4,25 @@ import "./VideoHeader.css";
 interface VideoHeaderProps {
   youtubeId?: string;
   videoPath?: string; // local path to video
+  title?: string;
 }
 
 function VideoHeader(props: VideoHeaderProps) {
+  function layoutTitle(text: string = "Title missing") {
+    const words = text.split(" ");
+    return (
+      <>
+        <u className="text-info">{words[0]}</u> {words.slice(1).join(" ")}
+      </>
+    );
+  }
   return (
     <section className="hero" id="section_1">
       <div className="container">
         <div className="row">
           <div className="col-lg-5 col-12 m-auto">
             <div className="hero-text">
-              <h1 className="text-white mb-4">
-                <u className="text-info">Leadership</u> Conference 2022
-              </h1>
+              <h1 className="text-white mb-4">{layoutTitle(props.title)}</h1>
 
               <div className="d-flex justify-content-center align-items-center">
                 <span className="date-text">July 12 to 18, 2022</span>
